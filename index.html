@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT Bienes Raíces | Naves industriales y terrenos en Saltillo y Ramos Arizpe</title>
+    <meta
+      name="description"
+      content="PT Bienes Raíces te ayuda a encontrar naves industriales y terrenos estratégicos en Saltillo y Ramos Arizpe. Asesoría profesional para inversión, renta y compra."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="logo" href="#inicio">PT Bienes Raíces</a>
+        <a class="nav-cta" href="#contacto">Agenda una asesoría</a>
+      </nav>
+
+      <div class="hero-content container">
+        <p class="eyebrow">Especialistas en sector industrial</p>
+        <h1>Naves industriales y terrenos estratégicos para tu próxima operación</h1>
+        <p class="hero-description">
+          Conectamos a empresas e inversionistas con oportunidades de alto valor en
+          <strong>Saltillo</strong> y <strong>Ramos Arizpe</strong>, con acompañamiento experto en cada etapa.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contacto">Quiero asesoría</a>
+          <a class="btn btn-secondary" href="#propiedades">Ver propiedades</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="servicios">
+        <div class="container">
+          <p class="section-eyebrow">Servicios</p>
+          <h2>Soluciones inmobiliarias industriales a la medida</h2>
+          <div class="cards cards-3">
+            <article class="card">
+              <h3>Compra y venta industrial</h3>
+              <p>
+                Identificamos opciones con alto potencial y negociamos condiciones competitivas para proteger tu inversión.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Renta de naves y lotes</h3>
+              <p>
+                Te ayudamos a encontrar espacios listos para operar, con ubicación y especificaciones alineadas a tus necesidades.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Asesoría estratégica</h3>
+              <p>
+                Evaluamos viabilidad, plusvalía y factores logísticos para tomar decisiones seguras y rentables.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="propiedades">
+        <div class="container">
+          <p class="section-eyebrow">Propiedades de ejemplo</p>
+          <h2>Opciones destacadas en la región sureste de Coahuila</h2>
+          <div class="cards cards-3 properties-grid">
+            <article class="property-card">
+              <span class="tag">Nave industrial</span>
+              <h3>Parque Industrial Derramadero</h3>
+              <p>8,000 m² de construcción · Andenes · Patio de maniobras · Acceso rápido a vías principales.</p>
+            </article>
+            <article class="property-card">
+              <span class="tag">Terreno</span>
+              <h3>Ramos Arizpe, corredor automotriz</h3>
+              <p>15,000 m² urbanizados · Uso industrial · Factibilidad de servicios · Excelente conectividad.</p>
+            </article>
+            <article class="property-card">
+              <span class="tag">Nave premium</span>
+              <h3>Zona industrial Saltillo</h3>
+              <p>4,500 m² · Altura libre de 10 m · Sistema contra incendio · Seguridad 24/7.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contacto">
+        <div class="container contact-layout">
+          <div>
+            <p class="section-eyebrow">Contacto</p>
+            <h2>Hablemos de tu próxima operación inmobiliaria</h2>
+            <p class="contact-copy">
+              Déjanos tus datos y un asesor de PT Bienes Raíces te contactará para presentarte opciones alineadas a tus objetivos.
+            </p>
+          </div>
+
+          <form class="contact-form" action="#" method="post" aria-label="Formulario de contacto">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" name="telefono" type="tel" placeholder="Tu teléfono" required />
+
+            <label for="interes">Interés principal</label>
+            <select id="interes" name="interes" required>
+              <option value="" selected disabled>Selecciona una opción</option>
+              <option value="nave-renta">Nave en renta</option>
+              <option value="nave-compra">Nave en compra</option>
+              <option value="terreno">Terreno industrial</option>
+              <option value="inversion">Inversión</option>
+            </select>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué estás buscando"></textarea>
+
+            <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/528441234567?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20naves%20industriales%20y%20terrenos"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactar por WhatsApp"
+    >
+      WhatsApp
+    </a>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> PT Bienes Raíces · Saltillo y Ramos Arizpe</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
