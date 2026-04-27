@@ -1,19 +1,37 @@
-# PT Bienes Raíces Landing
+# PT Bienes Raíces · Estimador preliminar
 
-Landing page profesional para captación de clientes interesados en naves industriales y terrenos en Saltillo y Ramos Arizpe.
+Aplicación web (pantalla única) para automatizar avalúos preliminares en zonas urbanas de Coahuila:
 
-## Estructura
+- Saltillo
+- Ramos Arizpe
+- Arteaga
 
-- `index.html`: estructura principal de la landing.
-- `styles.css`: estilos corporativos, premium y responsive.
-- `script.js`: comportamiento básico (año dinámico en footer).
+Incluye:
+
+- Formulario inmobiliario completo para asesores.
+- Estimación híbrida (mercado + reposición).
+- Comparables simulados multi-fuente (portales, marketplace y API comercial).
+- Rango de precio, confianza, escenarios de venta rápida y precio óptimo.
+- Recomendaciones automáticas y auditoría del cálculo.
+- Descarga de reporte en PDF.
+- Autocompletado de dirección con Nominatim + sugerencias locales.
+
+## Archivos
+
+- `index.html`: estructura de la app.
+- `styles.css`: estilos responsive para mobile y desktop.
+- `script.js`: lógica de estimación, comparables, auditoría, autocompletado y PDF.
 
 ## Ejecutar localmente
-
-Puedes abrir `index.html` directamente en tu navegador o levantar un servidor estático:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Luego visita `http://localhost:8000`.
+Abrir en navegador:
+
+- `http://localhost:8000`
+
+## Nota importante
+
+Por restricciones de presupuesto/licenciamiento (costo 0), los comparables se muestran en modo simulación. Para producción en tiempo real se requiere backend con conectores a APIs o fuentes licenciadas.
